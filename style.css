@@ -1,0 +1,48 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Segoe UI,sans-serif;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff7ac6,#a855f7);
+overflow:hidden;
+}
+.container{width:90%;max-width:800px;text-align:center}
+.card{
+backdrop-filter:blur(18px);
+background:rgba(255,255,255,.15);
+padding:40px;
+border-radius:25px;
+color:white;
+box-shadow:0 15px 40px rgba(0,0,0,.2);
+animation:float 4s ease-in-out infinite;
+}
+h1{color:white;margin-bottom:20px}
+h2{margin-bottom:15px}
+p{font-size:1.1rem;line-height:1.7}
+button{
+margin-top:25px;
+padding:14px 30px;
+border:none;
+border-radius:40px;
+font-size:1rem;
+cursor:pointer;
+background:white;
+color:#a855f7;
+font-weight:bold;
+transition:.3s;
+}
+button:hover{transform:scale(1.08)}
+@keyframes float{
+50%{transform:translateY(-8px)}
+}
+.particles span{
+position:absolute;
+color:white;
+animation:rise linear infinite;
+}
+@keyframes rise{
+from{transform:translateY(100vh);opacity:0}
+to{transform:translateY(-100px);opacity:1}
+}
